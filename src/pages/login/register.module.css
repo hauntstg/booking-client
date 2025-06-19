@@ -1,0 +1,28 @@
+.wrap-register {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.wrap-register h1 {
+  padding-bottom: 20px;
+}
+
+.wrap-register input {
+  width: 250px;
+  height: 40px;
+  box-sizing: border-box;
+}
+
+.wrap-register button {
+  width: 250px;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 700;
+  border: 0;
+  border-radius: 5px;
+  color: #f7f7f7;
+  background-color: #3d91ff;
+}

@@ -1,0 +1,132 @@
+.listContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.listWrapper {
+  width: 100%;
+  max-width: 1024px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 30px;
+}
+
+.descHotel {
+  grid-area: 1 / 1 / 2 / 7;
+}
+.descHotel h1 {
+  margin-bottom: 20px;
+}
+
+.priceHotel {
+  grid-area: 1 / 7 / 2 / 9;
+  flex: 1;
+  background-color: #ebf3ff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.priceHotel > h2 {
+  font-weight: 300;
+}
+.priceHotel > button {
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.dateRangeHotel {
+  grid-area: 2 / 1 / 3 / 4;
+  position: relative;
+}
+
+.formReserveHotel {
+  grid-area: 2 / 4 / 3 / 9;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.formReserveHotel * {
+  margin-bottom: 10px;
+}
+.formReserveHotel h2 {
+  margin-bottom: 20px;
+}
+.formReserveHotel label {
+}
+.formReserveHotel input {
+  height: 40px;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+.selectRoomsHotel {
+  display: flex;
+  flex-direction: column;
+  grid-area: 3 / 1 / 4 / 9;
+}
+.selectRoomsHotel h2 {
+  margin-bottom: 20px;
+}
+.detailRoomsWrap {
+  display: grid;
+  gap: 30px;
+  grid-template-columns: 1fr 1fr;
+}
+
+.roomsWrap {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.detailRooms {
+  /* display: flex; */
+}
+
+.selectRooms {
+  display: flex;
+  gap: 10px;
+}
+
+.checkboxRooms {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.payRoomsHotel {
+  grid-area: 4 / 1 / 5 / 9;
+}
+.payRoomsHotel h2 {
+  margin-bottom: 20px;
+}
+.selectPay {
+}
+.selectPay select {
+  height: 50px;
+  padding: 10px 20px;
+  margin-right: 80px;
+  border: none;
+  border-radius: 5px;
+  background-color: #f0ecec;
+}
+.selectPay button {
+  height: 60px;
+  border: none;
+  padding: 10px 20px;
+  background-color: #0071c2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.payRoomsHotel p {
+  font-style: italic;
+  color: red;
+}
