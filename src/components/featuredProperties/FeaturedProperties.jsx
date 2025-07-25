@@ -39,7 +39,11 @@ const FeaturedProperties = () => {
               className="fpImg"
             />
             <span className="fpName">
-              <a href={"/hotels/" + item._id} target="_blank">
+              <a
+                href={`/hotels/${item._id}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 {item.name}
               </a>
             </span>
