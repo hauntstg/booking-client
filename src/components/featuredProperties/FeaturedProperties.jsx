@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import "./featuredProperties.css";
 
 const API_URL = process.env.REACT_APP_API_URL;
@@ -39,13 +40,13 @@ const FeaturedProperties = () => {
               className="fpImg"
             />
             <span className="fpName">
-              <a
-                href={`/hotels/${item._id}`}
+              <Link
+                to={`/hotels/${item._id}`}
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 {item.name}
-              </a>
+              </Link>
             </span>
             <span className="fpCity">{item.city}</span>
             <span className="fpPrice">Starting from ${item.cheapestPrice}</span>
